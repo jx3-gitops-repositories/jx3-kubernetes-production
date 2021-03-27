@@ -6,7 +6,7 @@ jx:
   imagePullSecrets:
   - tekton-container-registry-auth
   pipelineVariables: {}
-  releaseCRD: true
+  releaseCRD: false
   secrets:
     adminUser:
       password: todo
@@ -21,20 +21,10 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
-    devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: ghcr.io
-  environments:
-  - key: dev
-  - key: staging
-  - key: production
   ingress:
     domain: change.me
     externalDNS: false

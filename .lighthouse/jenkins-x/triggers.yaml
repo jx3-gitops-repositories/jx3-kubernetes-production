@@ -37,3 +37,10 @@ spec:
         - needs-ok-to-test
         - needs-rebase
       review_approved_required: false
+  postsubmits:
+  - name: release
+    context: "release"
+    source: "release.yaml"
+    branches:
+    - ^main$
+    - ^master$

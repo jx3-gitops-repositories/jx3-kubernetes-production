@@ -5,7 +5,8 @@ jx:
     - tekton-container-registry-auth
 
   # whether to create a Release CRD when installing charts with Release CRDs included
-  releaseCRD: true
+  # defaults to false so we don't need to install any Jenkins X CRDs by default
+  releaseCRD: false
 
   # these variables are used by 'jx gitops variables' to default environment variables
   # into the .jx/variables.sh file which can be overriden on a pre repository basis

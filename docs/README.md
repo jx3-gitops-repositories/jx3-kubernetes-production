@@ -22,7 +22,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://jenkins-x.github.io/jenkins-x-website/img/profile.png' width='24px' height='24px'> jx-kh-check </a></td>
-	      <td>0.0.58</td>
+	      <td>0.0.59</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>

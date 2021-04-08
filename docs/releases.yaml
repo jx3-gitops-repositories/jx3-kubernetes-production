@@ -48,7 +48,7 @@
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     sources:
     - https://github.com/jenkins-x-plugins/jx-kh-check
-    version: 0.0.58
+    version: 0.0.59
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:

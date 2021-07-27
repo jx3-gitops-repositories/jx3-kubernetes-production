@@ -27,7 +27,6 @@ jxRequirements:
     provider: kubernetes
   ingress:
     domain: change.me
-    externalDNS: false
     kind: ingress
     namespaceSubDomain: -kuberhealthy.
     tls:

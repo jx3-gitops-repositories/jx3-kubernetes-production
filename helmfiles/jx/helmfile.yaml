@@ -1,0 +1,28 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx
+repositories:
+- name: bitnami
+  url: https://charts.bitnami.com/bitnami
+- name: jxgh
+  url: https://jenkins-x-charts.github.io/repo
+releases:
+- chart: bitnami/external-dns
+  version: 5.0.0
+  name: external-dns
+  values:
+  - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
+  - jx-values.yaml
+- chart: jxgh/acme
+  version: 0.0.24
+  condition: jxRequirementsIngressTLS.enabled
+  name: acme-jx
+  values:
+  - ../../versionStream/charts/jxgh/acme-jx/values.yaml.gotmpl
+  - jx-values.yaml
+
+templates: {}
+renderedvalues: {}

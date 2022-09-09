@@ -15,9 +15,7 @@ spec:
           name: ""
           resources:
             # override limits for all containers here
-            limits:
-              cpu: 400m
-              memory: 512Mi
+            limits: {}
           workingDir: /workspace/source
         steps:
         - image: uses:jenkins-x/jx3-pipeline-catalog/tasks/git-clone/git-clone-env-pr.yaml@versionStream
@@ -26,8 +24,8 @@ spec:
           resources:
             # override requests for the pod here
             requests:
-              cpu: 0.1
-              memory: 128Mi
+              cpu: 400m
+              memory: 512Mi
   podTemplate: {}
   serviceAccountName: tekton-bot
   timeout: 12h0m0s

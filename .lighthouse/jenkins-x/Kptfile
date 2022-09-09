@@ -7,5 +7,5 @@ upstream:
   git:
     commit: 4debb1ef44ad846088ce48d7921dd57510b9eda2
     repo: https://github.com/jenkins-x/jx3-pipeline-catalog
-    directory: /environment/.lighthouse/jenkins-x
+    directory: /environment-remote/.lighthouse/jenkins-x
     ref: master

@@ -12,7 +12,7 @@ repositories:
   url: https://jenkins-x-charts.github.io/repo
 releases:
 - chart: envoyproxy/gateway-helm
-  version: 1.8.0
+  version: 1.7.2
   condition: jxRequirementsIngressHTTPRoute.enabled
   name: gateway-helm
   values:
